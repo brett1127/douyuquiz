@@ -1,6 +1,6 @@
 # douyuquiz (ver.0.1)
 
-![Alt Text](https://ws1.sinaimg.cn/large/006tNc79gy1g2d3hlo6okj30v20kydzx.jpg)  
+![Alt Text](https://ws4.sinaimg.cn/large/006tNc79gy1g2d6kfp7udj30u80bswnt.jpg)  
 
 **douyuquiz** 是一个基于**python3.7**开发用于获取 **斗鱼直播间互动竞猜结果** 的脚本。该程序能自动侦测特定主播是否上线，上线后识别互动竞猜内容，竞猜结果将会以 **数据文件(quiz_data.db)** 的形式保存。
 
@@ -60,5 +60,5 @@ douyuquiz('room_id')
 感谢知乎大神**@天才白痴**关于如何获取斗鱼弹幕的教程  
 感谢各位斗鱼主播  
 由于技术有限，欢迎大家对于本程序提出建议或意见。  
-邮箱：youbao2@hotmail.com
+邮箱：youbao2@hotmail.com  
 ![Alt Text](https://ws2.sinaimg.cn/large/006tNc79gy1g2d2wykjwzg30h609mkjm.gif)
