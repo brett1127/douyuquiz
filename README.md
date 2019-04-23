@@ -1,7 +1,5 @@
 # douyuquiz (ver.0.1)
 
-![Alt Text](https://ws4.sinaimg.cn/large/006tNc79gy1g2d6kfp7udj30u80bswnt.jpg)  
-
 **douyuquiz** 是一个基于**python3.7**开发用于获取 **斗鱼直播间互动竞猜结果** 的脚本。该程序能自动侦测特定主播是否上线，上线后识别互动竞猜内容，竞猜结果将会以 **数据文件(quiz_data.db)** 的形式保存。
 
 ## 安装 Installation
