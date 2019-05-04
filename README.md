@@ -1,8 +1,20 @@
-# douyuquiz (ver.0.1)
+# douyuquiz
+
+** v0.2** - [Change log](CHANGELOG.md)
 
 **douyuquiz** 是一个基于**python3.7**开发用于获取 **斗鱼直播间互动竞猜结果** 的脚本。该程序能自动侦测特定主播是否上线，上线后识别互动竞猜内容，竞猜结果将会以 **数据文件(quizdata.db)** 的形式保存。
 
-## 安装 Installation
+## 介绍
+斗鱼（www.douyu.com) 是一个游戏直播网站。在直播间中，主播可以发起有关直播内容的互动竞猜。
+本程序运行后可以自动保存特定主播的互动竞猜记录。记录内容包括竞猜标题，竞猜封盘时鱼丸总数，竞猜封盘时双方赔率和竞猜结果等。
+
+
+## 特点
+* 功能简单（有且只有一个功能）
+* 自动侦测主播是否上线。若主播上线则获取竞猜消息，若主播下线或未开播，则每隔10分钟自动识别主播是否上线
+* 使用底层socket而不是网页爬虫来获取互动竞猜信息，低配置服务器也能轻松运行
+
+## 安装
 
 使用**pip命令**来安装douyuquiz
 
@@ -14,7 +26,7 @@ pip install douyuquiz
 pip3 install douyuquiz
 ```
 
-## 用法 Usage
+## 用法
 
 ```python
 from douyuquiz import douyuquiz
@@ -27,14 +39,14 @@ douyuquiz('room_id')
 **注意：** 在斗鱼的一些特殊活动直播页面中，该数字并不是主播的房间号。如遇到这种情况，可以通过其他方式获取主播的房间号。
 
 运行该python脚本。如果运行成功，将会显示如下信息：
-![Alt Text](https://ws3.sinaimg.cn/large/006tNc79gy1g2d1ocxca7g30qa0d4jtf.gif)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1g2d1ocxca7g30qa0d4jtf.gif)
 **注:** 程序需要后台挂起  
 
 程序自动生成**douyuquiz.log**文件
-![Alt Text](https://ws3.sinaimg.cn/large/006tNc79gy1g2d04chcz2j31tc08agov.jpg)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1g2d04chcz2j31tc08agov.jpg)
 
 当获取到竞猜消息时,将会显示如下内容：
-![Alt Text](https://ws2.sinaimg.cn/large/006tNc79gy1g2d1ec48ixg30r20fn40v.gif)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1g2d1ec48ixg30r20fn40v.gif)
 
 竞猜结果将会储存到当前文件夹内的**quizdata.db**文件中。如果没有该文件，程序将自动新建**quizdata.db**。
 
@@ -51,12 +63,12 @@ douyuquiz('room_id')
 **left(right)_title:** 该竞猜左边或右边的标题  
 **left (right)_total:** 该竞猜左边或右边封盘时的鱼丸总数  
 **left (right)_odd:** 该竞猜左边或右边封盘时的赔率  
-**result:** 该次竞猜的结果。 ‘1’代表左边胜，‘2’代表右边胜。**注:** 其中还有 ‘0’和'3'并不知道代表什么意思。
+**result:** 该次竞猜的结果。 ‘1’代表左边胜，‘2’或‘3’代表右边胜。‘0’代表流局
 
 ## 感谢
 
 感谢知乎大神 **@天白才痴** 关于如何获取斗鱼弹幕的教程  
-感谢各位斗鱼主播  
+感谢各位斗鱼主播
 由于技术有限，欢迎大家对于本程序提出建议或意见。  
 邮箱：youbao2@hotmail.com  
-![Alt Text](https://ws2.sinaimg.cn/large/006tNc79gy1g2d2wykjwzg30h609mkjm.gif)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1g2d2wykjwzg30h609mkjm.gif)

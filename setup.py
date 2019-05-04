@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="douyuquiz",
-    version="0.1",
+    version="0.2",
     author="Minhao Zhou",
     author_email="youbao2@hotmail.com",
     description="Acquire douyu quiz information",
