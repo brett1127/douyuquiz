@@ -1,6 +1,6 @@
 # douyuquiz
 
-** v0.2** - [Change log](CHANGELOG.md)
+** v0.2** - [更新日志(Change Log)](CHANGELOG.md)
 
 **douyuquiz** 是一个基于**python3.7**开发用于获取 **斗鱼直播间互动竞猜结果** 的脚本。该程序能自动侦测特定主播是否上线，上线后识别互动竞猜内容，竞猜结果将会以 **数据文件(quizdata.db)** 的形式保存。
 
